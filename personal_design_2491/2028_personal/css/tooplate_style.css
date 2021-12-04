@@ -1,0 +1,406 @@
+/*
+Template 2028 Personal
+http://www.tooplate.com/view/2028-personal
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #666;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	line-height: 1.7em; 
+	background-color: #293611;
+	background-image: url(../images/tooplate_body.jpg);
+	background-repeat: repeat
+}
+
+a, a:link, a:visited { 
+	color: #ea6f0b; 
+	font-weight: 700; 
+	text-decoration: none; 
+	font-size: 11px; 
+}
+
+a:hover { 
+	text-decoration: underline; 
+}
+
+a.gototop { 
+	display: block; clear: both; 
+	float: right; 
+	width: 38px; 
+	height: 22px; 
+	background: url(../images/tooplate_gototop.jpg) no-repeat;
+}
+ 
+p { 
+	margin: 0 0 10px 0; 
+	padding: 0; 
+}
+
+img { border: none; }
+blockquote { font-style: italic; margin: 0 0 0 10px;}
+cite { font-weight: bold; color:#000; }
+cite span { color: #000; }
+em { color: #000; font-weight: bold }
+
+h1, h2, h3, h4, h5, h6 { color: #000; font-weight: normal; }
+h1 { font-size: 34px; margin: 0 0 20px; padding: 5px 0 }
+h2 { font-size: 28px; margin: 0 0 20px; padding: 5px 0 10px; font-weight: 700; background: url(../images/tooplate_divider.jpg) repeat-x bottom }
+h3 { font-size: 24px; margin: 0 0 25px; padding: 0; }
+h4 { font-size: 18px; margin: 0 0 15px; padding: 0; }
+h5 { font-size: 16px; margin: 0 0 10px; padding: 0;  }
+h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
+
+.cleaner { clear: both }
+.h10 { height: 10px }
+.h20 { height: 20px }
+.h30 { height: 30px }
+.h40 { height: 40px }
+.h50 { height: 50px }
+.h60 { height: 60px }
+
+.float_l { float: left }
+.float_r { float: right }
+
+.image_wrapper { 
+	display: inline-block; 
+	padding: 5px 5px 15px; 
+	background: #fff url(../images/tooplate_image_frame.jpg) no-repeat bottom center; 
+	margin-bottom: 5px; 
+}
+
+.image_fl { 
+	float: left; 
+	margin: 3px 20px 0 0; 
+}
+
+.image_fr { 
+	float: right; 
+	margin: 3px 0 0 20px; 
+}
+
+.tooplate_list { 
+	margin: 20px 0 20px 10px; 
+	padding: 0; 
+	list-style: none; 
+}
+
+.tooplate_list li { 
+	color:#68992a; 
+	margin: 0; 
+	padding: 0 0 5px 20px; 
+	background: url(../images/tooplate_list.jpg) no-repeat scroll 0 5px;  
+}
+
+.tooplate_list li a { 
+	color: #68992a; 
+	font-weight: normal; 
+	font-size: 12px; 
+	text-decoration: none; 
+}
+
+.tooplate_list li a:hover { 
+	color: #68992a; 
+	text-decoration: underline; 
+}
+
+#tooplate_wrapper { 
+	width: 800px;
+	padding: 40px 0;
+	margin: 0 auto;
+}
+
+#tooplate_header {
+	width: 720px;
+	height: 62px;
+	padding: 9px 40px 19px;
+	background: url(../images/tooplate_header.jpg)
+}
+
+#top { 
+	width: 0; 
+	height: 0; 
+	visibility: hidden; 
+}
+
+#site_title { 
+	float: left; 
+	width: 210px; 
+	height: 60px;  
+}
+
+#site_title h1 { 
+	margin: 0; 
+	padding: 0; 
+}
+
+#site_title h1 a { 
+	display: block; 
+	width: 190px; 
+	height: 60px; 
+	margin: 0 10px; 
+	color: #b16502; 
+	font-size: 40px; 
+	outline: none; 
+	text-indent: -10000px; 
+	background: url(../images/tooplate_logo.jpg) no-repeat; 
+}
+
+/* menu */
+
+#tooplate_menu { 
+	float: right; 
+	width: 410px; 
+	height: 62px; 
+	padding: 0; 
+}
+
+#tooplate_menu ul { 
+	padding: 0; 
+	margin: 0; 
+	list-style: none; 
+}
+
+#tooplate_menu ul li { 
+	float: left; 
+	display: block; 
+	width: 80px;
+	padding-right: 2px; 
+	height: 60px; 
+	padding: 0; 
+	margin: 0; 
+	display: inline; 
+	background: url(../images/tooplate_menu_divider.jpg) no-repeat right center; 
+}
+
+#tooplate_menu .last { 
+ 	background: none; 
+ }
+ 
+#tooplate_menu ul li a {
+	display: block;
+	position: relative;
+	width: 80px;
+	height: 23px;
+	padding-top: 37px;
+	font-size: 10px;
+	color: #666;	
+	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+	outline: none;
+}
+
+#tooplate_menu ul li a:hover, #tooplate_menu ul li .current {
+	color: #d17403;
+}
+
+#tooplate_menu ul li span {
+	position: absolute;
+	bottom: 20px;
+	left: 22px;
+	width: 35px;
+	height: 35px;
+}
+
+#tooplate_menu ul li span.home {  
+	background: url(../images/tooplate_home.png) center center no-repeat; 
+}
+
+#tooplate_menu ul li span.home:hover { 
+ 	background: url(../images/tooplate_home_hover.png) center center no-repeat; 
+ }
+
+#tooplate_menu ul li span.aboutus {  
+	background: url(../images/tooplate_aboutus.png) center center no-repeat; 
+}
+
+#tooplate_menu ul li span.aboutus:hover {  
+	background: url(../images/tooplate_aboutus_hover.png) center center no-repeat; 
+}
+
+#tooplate_menu ul li span.services {  
+	background: url(../images/tooplate_services.png) center center no-repeat; 
+}
+
+#tooplate_menu ul li span.services:hover {  
+	background: url(../images/tooplate_services_hover.png) center center no-repeat; 
+}
+
+#tooplate_menu ul li span.portfolio {  
+	background: url(../images/tooplate_portfolio.png) center center no-repeat; 
+}
+
+#tooplate_menu ul li span.portfolio:hover {  
+	background: url(../images/tooplate_portfolio_hover.png) center center no-repeat; 
+}
+
+#tooplate_menu ul li span.contactus {  
+	background: url(../images/tooplate_contactus.png) center center no-repeat; 
+}
+
+#tooplate_menu ul li span.contactus:hover {  
+	background: url(../images/tooplate_contactus_hover.png) center center no-repeat; 
+}
+
+/* end of menu */
+
+#tooplate_main { 
+	clear: both;
+	width: 780px;
+	padding: 0 10px;
+	background: url(../images/tooplate_main_repeat.png) repeat-y
+}
+
+.content {
+	width: 720px;
+	padding: 20px 30px;
+	background: url(../images/tooplate_content_repeat.png) repeat-y
+}
+
+.content_top { 
+	margin-top: 30px; 
+	width: 780px; 
+	height: 10px; 
+	background: url(../images/tooplate_content_top.jpg);
+}
+
+.content_bottom { 
+	width: 780px; 
+	height: 10px; 
+	background: url(../images/tooplate_content_bottom.jpg); 
+}
+
+.col_w330 { width: 330px }
+
+.service_list { 
+	margin: 0 0 0 15px; 
+	padding: 0; 
+	list-style: none; 
+}
+
+.service_list li { 
+	margin: 0; 
+	padding: 0; 
+}
+
+.service_list li a { 
+	display: block; 
+	height: 25px; 
+	margin-bottom: 15px; 
+	padding-left: 40px; 
+	text-decoration: none; 
+}
+
+.service_list li .service_one { 
+	background: url(../images/onebit_08.png) center left no-repeat; 
+}
+
+.service_list li .service_two { 
+	background: url(../images/onebit_11.png) center left no-repeat; 
+}
+
+.service_list li .service_three { 
+	background: url(../images/onebit_17.png) center left no-repeat; 
+}
+
+.service_list li .service_four { 
+	background: url(../images/onebit_21.png) center left no-repeat; 
+}
+
+.service_list li .service_five { 
+	background: url(../images/onebit_12.png) center left no-repeat; 
+}
+
+.service_list li .service_six { 
+	background: url(../images/onebit_19.png) center left no-repeat; 
+}
+
+#gallery { 
+	margin: 0; 
+	padding: 0; 
+}
+
+#gallery ul { 
+	margin: 0; 
+	padding: 0;
+}
+
+#gallery ul li { 
+	display: block; 
+	width: 350px; 
+	height: 165px; 
+	margin: 0 0 30px; 
+}
+
+#gallery ul li a img { 
+	width: 340px; 
+	height: 150px; 
+	padding: 5px 5px 15px; 
+	background: #fff url(../images/tooplate_image_frame.jpg) no-repeat bottom center; 
+	margin-bottom: 5px; 
+}
+
+#contact_form { 
+	padding: 0; 
+	width: 300px; 
+}
+
+#contact_form form { 
+	margin: 0px; 
+	padding: 0px; 
+}
+
+#contact_form form .input_field { 
+	width: 290px; 
+	padding: 10px;
+	border: 1px solid #ccc;  
+	background: #fff; 
+	color: #666;
+	font-family: Verdana,Geneva,sans-serif;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+#contact_form form label { 
+	display: block; 
+	width: 100px; 
+	margin-right: 10px; 
+	font-size: 14px; 
+}
+
+#contact_form form textarea { 
+	width: 288px; 
+	height: 150px; 
+	padding: 10px; 
+	border: 1px solid #ccc;  
+	background: #fff; 
+	color: #666;
+	font-family: Verdana,Geneva,sans-serif;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+#contact_form form .submit_btn { 
+	margin: 5px 0px;
+	padding: 10px 20px; 
+	text-decoration: none; 
+	border: 1px solid #ccc;  
+	background: #fff; 
+	font-size: 14px;  
+}
+
+#tooplate_footer {
+	clear: both;
+	width: 760px;
+	padding: 20px;
+	text-align: center;
+	color: #ccc;
+	background: url(../images/tooplate_footer.jpg) center top no-repeat;
+}
+
+#tooplate_footer a {
+	color: #fff;
+}

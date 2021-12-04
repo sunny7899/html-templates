@@ -1,0 +1,330 @@
+body {
+	background: none repeat scroll 0 0 #0b192f;
+	color: #fff;
+	font-family: roboto;
+	font-weight: 300;
+}
+nav {
+	background: none repeat scroll 0 0 #162b4d;
+	position: relative;
+}
+a.logo {
+	color: #fff;
+	display: inline-block;
+	font-size: 2.3em;
+	font-weight: 100;
+	letter-spacing: -1px;
+	padding: 0.6em;
+}
+a.logo span {
+	color: #d12767;
+}
+header h1 {
+	color: #637693;
+	display: inline;
+	font-size: 1em;
+	font-weight: 300;
+	margin: 0;
+	position: relative;
+	top: -0.35em;
+}
+.top-nav li a {
+	font-size: 1.1em;
+	padding: 2em 1.25em;
+}
+.top-nav li a:hover {
+	background: none repeat scroll 0 0 #283D5F;
+}
+.top-nav .active-item a, .top-nav .active-item a:hover {
+	background: none repeat scroll 0 0 #0b192f;
+}
+.social {
+	padding: 1.6em;
+}
+.social i {
+	color: #637693;
+	transition: color 0.20s linear 0s;
+	-o-transition: color 0.20s linear 0s;
+	-ms-transition: color 0.20s linear 0s;
+	-moz-transition: color 0.20s linear 0s;
+	-webkit-transition: color 0.20s linear 0s;
+}
+.social i:hover {
+	color: #fff;
+}
+section p {
+	line-height: 1.6em;
+}
+.post-image img {
+	display: block;
+	margin: 0;
+	opacity: 1;
+	transition: opacity 0.20s linear 0s;
+	-o-transition: opacity 0.20s linear 0s;
+	-ms-transition: opacity 0.20s linear 0s;
+	-moz-transition: opacity 0.20s linear 0s;
+	-webkit-transition: opacity 0.20s linear 0s;
+}
+#home-section .post-image img:hover, #article-section.archive .post-image img:hover {
+	opacity: 0.5;
+}
+#home-section .post-text {
+	color: #fff;
+	padding: 2.25em;
+}
+#home-section .post-text h2 {
+	color: #fff;
+	font-size: 3.2em;
+	font-weight: 100;
+	line-height: 1em;
+	margin: 0 0 0.3125em 0;
+  opacity:1;
+	padding: 0;
+  transition: opacity 0.20s linear 0s;
+	-o-transition: opacity 0.20s linear 0s;
+	-ms-transition: opacity 0.20s linear 0s;
+	-moz-transition: opacity 0.20s linear 0s;
+	-webkit-transition: opacity 0.20s linear 0s;
+}
+#home-section .post-text h2:hover {
+	opacity:0.6;
+}
+#home-section .post-text p {
+	font-size: 0.9em;
+	opacity: 0.6;
+}
+.post-date .date {
+	font-size: 3em;
+}
+.post-date .month {
+	font-size: 1.6em;
+	margin-bottom: 1em;
+	margin-top: -0.7em;
+}
+.post-date {
+	font-weight: 100;
+	opacity: 0.3;
+	text-align: center;
+}
+.right-align .post-image {
+	float: right;
+}
+.right-align .post-text {
+	float: right;
+	text-align: right;
+}
+.right-align .post-date {
+	float: right;
+	text-align: right;
+}
+.post-1 {
+	background: none repeat scroll 0 0 #B71757;
+}
+.post-2 {
+	background: none repeat scroll 0 0 #0D7E71;
+}
+.post-3 {
+	background: none repeat scroll 0 0 #b1660e;
+}
+.post-4 {
+	background: none repeat scroll 0 0 #d12767;
+}
+.post-5 {
+	background: none repeat scroll 0 0 #2d95bb;
+}
+.aside-block {
+	background: none repeat scroll 0 0 #fff;
+	margin-bottom: 1.25em;
+	padding: 2em;
+}
+aside img {
+	display: block;
+	margin: 0;
+}
+aside h3 {
+	color: #0b192f;
+	font-size: 2em;
+	font-weight: 300;
+	line-height: 1em;
+	margin: 0 0 0.625em;
+}
+aside p {
+	color: #637693;
+	font-size: 0.85em;
+}
+.advertising {
+	background: none repeat scroll 0 0 #fff;
+}
+footer {
+	background: none repeat scroll 0 0 #162b4d;
+	display: inline-block;
+	margin-bottom: 0;
+	margin-top: 1.25em;
+	padding: 1.7em;
+	position: relative;
+	width: 100%;
+}
+footer p, footer a, footer a:link, footer a:active, footer a:visited {
+	color: #637693;
+	font-size: 0.9em;
+}
+#article-section article {
+	background: none repeat scroll 0 0 #fff;
+}
+#article-section p {
+	color: #637693;
+}
+#article-section h1, #article-section h2, #article-section h3, #article-section h4, #article-section h5, #article-section h6 {
+	color: #0b192f;
+	font-weight: 100;
+}
+#article-section h1 {
+	font-size: 3em;
+	font-weight: 100;
+	margin-top: 0;
+}
+#article-section h3, #article-section h4, #article-section h5, #article-section h6 {
+	font-weight: 300;
+}
+#article-section .post-text {
+	padding: 2em 3em 3em;
+}
+#article-section .post-date p {
+	color: #fff;
+}
+#article-section blockquote {
+	border-left: 2px solid #637693;
+	color: #637693;
+	font-family: georgia;
+	font-size: 1.1em;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 1.4em;
+	margin-left: 0.625em;
+	padding-left: 0.625em;
+}
+#article-section .post-text img {
+	margin: 1.25em 0;
+	max-width: 100%;
+	width: auto;
+}
+p.author {
+	background: none repeat scroll 0 0 #f0f0f0;
+	font-family: georgia;
+	font-size: 0.8em;
+	font-style: italic;
+	margin-top: 1.25em;
+	padding: 0.3125em 0.625em;
+}
+a.continue-reading, form.customform button {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border: 1px solid #0b192f;
+	color: #0b192f;
+	display: inline-block;
+	font-size: 0.9em;
+	font-weight: 400;
+	height: auto;
+	margin-top: 1.25em;
+	padding: 0.625em 1.25em;
+	transition: background 0.20s linear 0s;
+	-o-transition: background 0.20s linear 0s;
+	-ms-transition: background 0.20s linear 0s;
+	-moz-transition: background 0.20s linear 0s;
+	-webkit-transition: background 0.20s linear 0s;
+}
+form.customform button {
+	margin-top: 0;
+}
+a.continue-reading:hover, form.customform button:hover {
+	background: none repeat scroll 0 0 #0b192f;
+	color: #fff;
+}
+a.latest-posts {
+	border-bottom: 1px solid #e0e0e0;
+	display: block;
+	margin-bottom: 1.25em;
+	padding-bottom: 1.25em;
+}
+a.latest-posts:last-child {
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+}
+#article-section aside a h5:hover {
+	color: #d12767;
+}
+.advertising.horizontal {
+	padding: 2em;
+}
+address {
+	font-style: normal;
+}
+address i.icon {
+	background: none repeat scroll 0 0 #0b192f;
+	border-radius: 30px;
+	color: #fff;
+	display: block;
+	float: left;
+	font-size: 0.8em;
+	height: 30px;
+	line-height: 30px;
+	margin-right: 0.625em;
+	position: relative;
+	text-align: center;
+	top: 4px;
+	width: 30px;
+}
+address p {
+	line-height: 2.5em;
+}
+@media screen and (max-width: 800px) {
+  a.logo {
+  	display: block;
+  	text-align: center;
+  }
+  head h1 {
+  	display: block;
+  	text-align: center;
+  }
+  header h1 {
+  	display: block;
+  	text-align: center;
+  	top: -1.5em;
+  }
+  .nav-text {
+  	font-size: 2.5em;
+  	line-height: 1em;
+  	padding-top: 1em;
+  	text-align: center;
+  }
+  .top-nav ul {
+  	float: none;
+  	text-align: center;
+  }
+  .top-nav li a {
+  	background: none repeat scroll 0 0 #162b4d;
+  	border-top: 1px solid #0b192f;
+  	color: #fff;
+  	display: block;
+  }
+  .social.right {
+  	float: none;
+  	text-align: center;
+  }
+  #article-section .post-text {
+  	padding: 1em 2em 2em;
+  }
+  .right-align .post-text {
+  	text-align: left;
+  }
+  .right-align .post-date {
+  	text-align: center;
+  }
+  footer a.right {
+  	float: none;
+  	text-align: center;
+  }
+  footer {
+  	text-align: center;
+  }
+}

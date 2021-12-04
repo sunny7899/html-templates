@@ -1,0 +1,101 @@
+body {
+    background-color: #313131;
+}
+
+.diplay-view {
+    height: 100vh;
+}
+
+.my-row {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 80% 10%;
+}
+
+.meeting-info {
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: row;
+    place-content: space-around;
+}
+
+.footer {
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: row;
+    place-content: space-around;
+}
+
+.meeting-name {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+}
+
+.meeting-info span {
+    color: white;
+}
+.meeting-info i {
+    font-size: 25px;
+    color: #fff;
+}
+
+.members {
+    position: relative;
+    border: 1px solid #1b1b1b;
+    background-color: #292929;
+    box-shadow:  0 0 10px 10px #252525;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.members .my-video {
+    position: absolute;
+    height: 150px;
+    width: 90px;
+    background-color: #494949;
+    border: 1px solid #181818;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.members .my-video i {
+    color: white;
+    font-size: 30px;
+}
+
+
+/* 
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+} */
+.footer i{
+    font-size: 25px;
+    margin: 10px; 
+}
+
+.header-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

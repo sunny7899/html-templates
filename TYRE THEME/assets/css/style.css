@@ -1,0 +1,229 @@
+@import url(http://fonts.googleapis.com/css?family=Squada+One);
+    body {
+    }
+
+h2{ text-align: left!important;}	
+	.brand {
+		background:url(../img/logo.png) no-repeat;
+		width:312px!important;
+		height:76px;
+		margin-left:12px!important;
+		margin-top:11px!important;
+		margin-bottom:9px!important;
+		}
+		
+.img-circle {
+		  max-width:164px;
+		  max-height:200px;
+}
+
+.nav {
+  padding:0px;
+  margin-left: 0;
+  list-style: none;
+}
+
+.nav > li > a {
+ font-size:14px;
+}
+
+.nav > li > a:hover {
+ color:#fff!important;
+ background:#ed8d0d!important;
+ border-radius:0px!important;
+ font-weight:normal!important;
+}
+
+.caret {border-bottom-color:#fff!important; border-top-color: #fff!important;}
+
+.img-border{border:3px solid #dbdcde; margin-bottom:25px;}
+.alert-msg {
+    background-color: #f5f6f7;
+    border: 1px solid #c2c6cb;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    color: #3A87AD;
+	padding:12px;
+	text-align:center;
+	font-size:14px;
+	line-height:26px;
+	clear:both;
+	margin-bottom:24px;
+	margin-top:10px;
+}
+
+.alert-msg table td:first-child { text-align: right;}
+
+.gmap {
+    background-color: #f5f6f7;
+    border: 1px solid #c2c6cb;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+	clear:both;
+}
+.address{ font-weight:1.4em; font-weight: normal;}
+
+.contactform {padding-top:20px;}
+
+.high-light {
+background: url(../img/home-block-bg.png);
+border: 1px dotted #D4CDC6;
+padding: 16px 0 10px 0;
+line-height:24px;
+font-size:1.2em;
+}
+
+.alert-msg a{ text-decoration:underline;}
+
+.line-dotted {border-top:1px dotted #BCBCBC; height:1px; display:block; clear:both; margin:6px 0 18px 0;}
+
+.spotlight {
+width:100%;
+background:#000;
+}
+
+.left { margin-left:1.8%;}
+.right { margin-right:1.8%;}
+
+.phone { font-family: Arial, Helvetica, sans-serif; font-weight: bold; 
+font-size:20px; color:#ec8c0c; background:url(../img/phone-icon.png) no-repeat; padding-left:34px; height:30px; 
+margin-top:40px; text-transform:uppercase; padding-top:5px;
+font-family:'Squada One',arial;}
+
+.one { background:url(../img/1.png) no-repeat; width:26px; height:42px;}
+.two { background:url(../img/2.png) no-repeat; width:26px; height:42px;}
+.three { background:url(../img/3.png) no-repeat; width:26px; height:42px;}
+.four { background:url(../img/4.png) no-repeat; width:26px; height:42px;}
+.five { background:url(../img/5.png) no-repeat; width:26px; height:42px;}
+
+.navbar-innerbg {background: url(../img/nav-bg.gif) repeat-x; font-family:Helv Compressed!important;}
+
+.clientale {
+border-top:1px dotted #e0d7cf; 
+border-bottom:1px dotted #e0d7cf;
+padding:12px;
+margin:20px 0 20px 0;
+}
+
+.clientale:hover {
+background-color: rgba(255, 255, 255, 0.4);
+}
+
+.home-point{ clear:both; display:block; float:left; margin-bottom:30px;}
+
+.home-point h5 { 
+line-height: 22px;
+color:#2a2a2a;
+margin: 1px 0 0px 0;
+}
+
+.home-point li {float:left; margin-right:11px; min-height:42px; display:inline-block;}
+
+/* MARKETING CONTENT-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+/*.marketing .span4 {
+      text-align: justify;
+	  border: 1px solid rgb(212, 205, 198);
+	  line-height: 1.4em;
+	  padding: 16px;
+	  background:url(../img/home-block-bg.png);
+    }
+	.marketing [class*="span"] { margin-left:0!important;}
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+*/
+
+/*corrousal*/
+.lead {
+  margin-bottom: 9px;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 18px;
+}
+.lead ul{
+	margin-left:0;
+	padding-left:0;
+	background:#00f;
+	display:block;
+}
+.lead li {
+	margin-left:6px;
+	padding-left:0px;
+	line-height:2em;
+}
+	.marketing .table { width:100%; background:#fff;}
+    .marketing .table td, .marketing .table th { 
+	background:url(../img/home-block-bg.png); border-bottom: 1px dotted #D4CDC6; padding:8px 18px 18px 18px; line-height:1.4em;}
+    /* Featurettes
+    ------------------------- */
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+/*****************************************************************************************/
+.rightcol {margin-top: 0px;}
+.rightcol-unit {padding:0 0 6px 0; border:1px #aeaeae; margin-top:0px;}
+/*.rightcol-unit:hover {background-color: rgba(255, 255, 255, 0.4);}*/
+.ht-prod { clear:both;}
+.ht-prod button{background:#165db7; border:1px solid #1c417e; color:#fff;}
+.ht-prod li { float:left; margin-bottom:12px;}
+.ht-prod li img{ margin-right:16px; border:3px solid #d5d5d8;}
+.ht-prod li p{ margin-top:6px;}
+/*****************************************************************************************/
+.h-wrapper{ margin:0 auto; display:table; margin-bottom:24px;}
+.hcontent {width:auto; display:block;}
+.corner-l {display:inline; float:left; background:url(../img/corner-l.png) no-repeat; width:37px; height:63px; vertical-align:top;}
+.corner-r {display:inline; float:left; background:url(../img/corner-r.png) no-repeat; width:37px; height:63px;}
+
+/*footer*/
+footer { border-top: 1px solid rgb(214, 211, 212);
+background:#ede8df;
+margin-top:24px;
+}
+
+footer p{ margin-top:10px;}
+
+/*******************************************Form**********************************/
+.contactform form input {width:84.4%;}
+.contactform textarea {width:97.4%;}
+.gandi-quote{font-weight:normal; color::#000!important; font-size:14px; border:2px dotted #d6d2cf; padding:20px; background:#fff;}
+
+/*map*/
+.map-address{padding:12px; font-weight:1.4em; font-weight: normal; color:#f75c50;}
+#map {width: 500px; height:400px;}
+.mapwrapper-address{padding:0 0 12px 0; font-weight:1.4em; font-weight: normal; color:#f75c50;}
+.goto-wrap{width:100%; display:block; height:60px;}
+.goto {float:right; padding:8px 0 0 0;}

@@ -1,0 +1,700 @@
+/*
+ * Theme Name: SHALOM*TYPO
+ * Theme URI: http://www.davidhellmann.com
+ * Description: Theme
+ * Version: 0.1
+ * Author: David Hellmann
+ * Author URI: http://www.davidhellmann.com
+ */
+
+
+/* __ Reset */
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+
+/* __Overall */
+
+.floatleft {
+	float: left;
+}
+
+.floatright {
+	float: right;
+}
+
+.noborder {
+	border: none;
+}
+
+.clearboth {
+	clear: both;
+}
+
+
+/* Clearfix */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+/* Clearfix Patches für den IE */
+.clearfix { display: inline-block; }
+
+/* Vor IE5/Mac verstecken mit dem Commented Backslash Hack \*/
+* html .clearfix { height: 1px; }
+.clearfix { display: block; }
+/* Ende des Versteckspiels für den IE5/Mac */
+
+
+/** HIDING FOCUSRING */
+a:active, a { 
+	outline: none; 
+}
+ 
+:focus { 
+	-moz-outline-style: none; 
+}
+ 
+:-moz-any-link:focus {
+	outline: none;
+}
+
+a {
+	color:#d40000;
+	border-bottom: 1px dotted #000;
+	cursor: pointer;
+}
+
+a:hover {
+	color:#000;
+	border-bottom: 2px solid #d40000;
+}
+
+a:active {
+	color: #aaa;
+}
+
+h1 a, h1 a:hover {
+	font-weight: normal;
+	border:none;
+}
+
+/* __ Body */
+html, body {
+	overflow: hidden;
+	color: #555;
+	font:normal 13px/20px Georgia, "Times New Roman", Times, serif;
+	height: 100%;
+} 
+
+/* __ Background */
+
+#background {
+	width: 100%;
+	height: 100%;
+	font: normal 30px/30px arial, verdana, sans-serif;
+	position: absolute;
+	text-align: justify;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	color: #ccc;
+	letter-spacing: -1px;
+	overflow: hidden;
+}
+
+.georgia { font-family:Georgia, "Times New Roman", Times, serif; }
+.courier-new { font-family:"Courier New", Courier, monospace; }
+.arial { font-family:Arial, Helvetica, sans-serif; }
+.arial-black { font-family:"Arial Black", Gadget, sans-serif; }
+.tahoma { font-family:Tahoma, Geneva, sans-serif; }
+.trebuchet-ms { font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; }
+.times-new-roman { font-family:"Times New Roman", Times, serif; }
+.gray-ccc {	color: #ccc; }
+.gray-aaa {	color: #aaa; }
+.gray-888 {	color: #888; }
+.gray-666 {	color: #666; }
+.gray-444 {	color: #444; }
+.gray-222 {	color: #222; }
+.red {	color: #d40000; }
+.small { font-size: 15px; }
+.normal { font-size: 30px; }
+.big {	font-size: 50px; }
+.mega {
+	font-size: 70px;
+	letter-spacing: -2px;
+	line-height: 25px;
+}
+.bold {	font-weight: bold; }
+
+
+/* __ Page */
+
+#page-wrapper {
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	z-index: 2;
+	background: url(../images/raster.png) repeat;
+}
+
+
+/* __ Center Content */
+
+#page-wrapper #content-wrapper {
+	width: 940px;
+	background: #fff;
+	padding: 0 10px 50px 30px;
+	margin: 0 auto;
+}
+
+
+/* __ Header */
+
+#content-wrapper #header {
+	float: left;
+	width: 900px;
+	margin: 0 0 80px 20px;
+	padding: 100px 0 0 0;
+	position: relative;
+}
+
+#header #navigation {
+	position: absolute;
+	right: 0px;
+	top:120px;
+}
+
+#header #navigation li {
+	float: left;
+	margin: 0 0 0 5px;
+}
+
+#header #navigation li.trenner {
+	color:#eee;
+}
+
+#header #navigation li a {
+	color:#aaa;
+	border: none;
+	font-size: 18px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+#header #navigation li a.aktiv {
+	color:#000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 25px;
+}
+
+#header #navigation li a:hover {
+	color:#000;
+}
+
+
+
+/* __ Left Box */
+
+#content-wrapper #left {
+	float: left;
+	clear: both;
+	width: 520px;
+	padding: 0 50px 0 0;
+	border-right:2px dotted #eee;
+	margin: 0 0 0 20px;
+}
+
+#left h4 {
+	float: left;
+	clear: both;
+	font:italic normal 13px/18px Georgia, "Times New Roman", Times, serif;
+	width: 100%;
+	text-align: center;
+	color: #aaa;
+	margin: 0 0 10px 0;
+}
+
+#left p {
+	float: left;
+	clear: both;
+	width: 520px;
+	padding: 10px 0;
+}
+
+#left .initial {
+	float: left;
+	width: auto;
+	clear: none;
+	font-size: 100px;
+	line-height: 39px;
+	padding: 0;
+	margin: 0 5px 10px 0;
+	color: #333;
+}
+
+#left .meta, #left .autor {
+	width: 100px;
+	float: right;
+	clear: none;
+	text-align: left;
+	border-left: 1px solid #555;
+	font-size: 11px;
+	line-height: 20px;
+	padding: 0 0 0 10px;
+	margin: 0 0 20px 20px;
+	color: #333;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#left .autor {
+	width: 50px;
+	height: 50px;
+}
+
+
+#left blockquote {
+	float: left;
+	clear: both;
+	width: 475px;
+	padding: 0 0 0 10px;
+	text-align:justify;
+	color: #999;
+	margin: 10px 0 10px 30px;
+	border-left: 5px solid #333;
+	font-family:Arial, Helvetica, sans-serif;
+	font-style: italic;
+}
+
+#left .more-articles {
+	float: left;
+	clear: both;
+	width: 520px;
+	border-top:2px dotted #eee;
+	margin: 40px 0 0 0;
+	padding: 20px 0 0 0;
+}
+
+#left .more-articles li {
+	float: left;
+	width: 520px;
+	margin: 10px 0 30px 0;
+}
+
+#left .more-articles li.right {
+	float: right;
+}
+
+#left .more-articles li h2 {
+	font-size: 25px;
+	line-height: 40px;
+	margin: 0 0 5px 0;
+}
+
+/* __Comments */
+
+#left .comments {
+	float: left;
+	clear: both;
+	width: 520px;
+	border-top:2px dotted #eee;
+	margin: 40px 0 0 0;
+	padding: 20px 0 0 0;
+}
+
+#left .comments li {
+	float: left;
+	width: 520px;
+	margin: 0 0 10px 0;
+	padding: 0 0 10px 0;
+	border-bottom: 1px dotted #aaa;
+}
+
+#left .comments li.admin {
+	width: 480px;
+	padding: 15px;
+	border: 5px solid #d40000;
+	background: #fefefe;
+}
+
+#left .comments li.admin p {
+	width: 480px;
+}
+
+#left .comments li.form {
+	width: 490px;
+	padding: 15px;
+	background: #000;
+	color: #fff;
+	float: left;
+}
+
+#left .comments li.form label, #left .comments li.form input, #left .comments li.form textarea {
+	float: left;
+	clear: both;
+	margin: 0 0 5px 0;	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+#left .comments li.form input, #left .comments li.form textarea {
+	background: #eee;
+	border: 5px solid #666;
+	padding: 5px;
+	width: 200px;
+	float: left;
+	clear: both;
+}
+
+#left .comments li.form textarea {
+	width: 460px;
+	float: left;
+	clear: both;
+}
+
+#left .comments li.form input.button {
+	background: #d40000;
+	border: 5px solid #d40000;
+	padding: 5px;
+	float: left;
+	clear: both;
+	cursor: pointer;
+	color: #fff;
+	margin: 10px 0 0 0;
+	font-weight: bold;
+}
+
+#left .comments li.form input.button:hover {
+	background: #b40000;
+}
+
+#left .comments li.form input:focus, #left .comments li.form textarea:focus {
+	background: #fff;
+	border: 5px solid #eee;
+}
+
+#left .comments li.headline {
+	border-bottom:none;
+}
+
+#left .comments li h2 {
+	font-size: 25px;
+	line-height: 40px;
+	margin: 0 0 5px 0;
+	float: left;
+}
+
+#left .comments li h3 {
+	font-size: 18px;
+	font-weight: normal;
+	margin: 20px 0 5px 0;
+	float: left;
+}
+
+
+/* __ Portfolio */
+
+ul#portfolio, ul#portfolio-detail {
+	float: left;
+	clear: both;
+	width: 940px;
+}
+
+ul#portfolio li, ul#portfolio-detail li {
+	float: left;
+	width: 440px;
+	margin: 0 0 20px 20px;
+	padding: 0 0 10px 0;
+	border: none;
+	border-bottom: 1px dotted #aaa;
+}
+
+ul#portfolio-detail li {
+	width: 900px;
+}
+
+ul#portfolio-detail li .textbox {
+	width: 280px;
+	margin: 10px;
+	float: left;
+}
+
+ul#portfolio-detail li .textbox h3 {
+	width: 280px;
+	float: left;
+	font:normal 18px/25px Georgia, "Times New Roman", Times, serif;
+	color: #000;
+	margin: 0 0 15px 0;
+}
+
+ul#portfolio-detail li .textbox p {
+	width: 280px;
+	float: left;
+	padding:0 0 10px 0;
+}
+
+ul#portfolio-detail li .textbox p .green {
+	color: #62be00;
+}
+
+
+
+
+ul#portfolio li a, ul#portfolio li a:hover {
+	border:none;
+	margin: 0;
+	padding: 0;
+}
+
+ul#portfolio li a img, ul#portfolio-detail li img {
+	border: 9px solid #ddd;
+	padding: 1px;
+	margin: 0 0  10px 0;
+}
+
+
+ul#portfolio li a:hover img {
+	border: 9px solid #d40000;
+}
+
+ul#portfolio li h2, ul#portfolio-detail li h2  {
+	float: left;
+	clear: both;
+	font:normal 30px/45px Georgia, "Times New Roman", Times, serif;
+	width: 100%;
+	text-align: center;
+	border-bottom: 4px double #000;
+	color: #333;
+	margin: 0 0 10px 0;
+}
+
+ul#portfolio-detail li h2  {
+	width: 900px;
+}
+
+/* __ About */
+
+
+ul#about {
+	float: left;
+	clear: both;
+	width: 940px;
+}
+
+ul#about li {
+	float: left;
+	width: 287px;
+	margin: 0 0 20px 20px;
+	padding: 0 0 10px 0;
+	border: none;
+}
+
+ul#about li h2  {
+	float: left;
+	clear: both;
+	font:normal 30px/45px Georgia, "Times New Roman", Times, serif;
+	width: 100%;
+	text-align: center;
+	border-bottom: 4px double #000;
+	color: #333;
+	margin: 0 0 11px 0;
+}
+
+
+
+
+/* __ Sidebar */
+
+#content-wrapper #sidebar {
+	float: right;
+	width: 280px;
+	margin: 0 20px 0 0;
+}
+
+#sidebar #cats, #sidebar #tags, #sidebar #latest-work, #sidebar #articles {
+	float: left;
+	width: 130px;
+	padding: 10px 0;
+	border-bottom: 1px dotted #aaa;
+}
+
+#sidebar #latest-work, #sidebar #articles {
+	width: 280px;
+}
+
+#sidebar #articles {
+	border: none;
+}
+
+
+#sidebar #tags {
+	float: right;
+}
+
+#sidebar #cats li, #sidebar #tags li, #sidebar #latest-work li, #sidebar #articles li {
+	float: left;
+	clear: both;
+	width: 100%;
+	margin: 0 0 2px 0;
+}
+
+#sidebar #cats li a, #sidebar #tags li a, #sidebar #latest-work li a, #sidebar #articles li a {
+	font-size: 13px;
+}
+
+#sidebar #latest-work li a, #sidebar #latest-work li a img {
+	border: none;
+}
+
+#sidebar #latest-work li a {
+	position: relative;
+	display: block;
+}
+
+#sidebar #latest-work li a span {
+	position: absolute;
+	display: none;
+}
+
+#sidebar #latest-work li a:hover span {
+	background: #fff;
+	color: #000;
+	padding:2px 5px;
+	font:normal 11px/11px Arial, Helvetica, sans-serif;
+	right: 5px;
+	top: 60px;
+	position: absolute;
+	display: block;
+}
+
+
+#sidebar h2, #left h2, #sidebar #cats li.h2, #sidebar #tags li.h2, #sidebar #latest-work li.h2 {
+	float: left;
+	clear: both;
+	font:normal 30px/45px Georgia, "Times New Roman", Times, serif;
+	width: 100%;
+	text-align: center;
+	border-bottom: 4px double #000;
+	color: #333;
+	margin: 0 0 10px 0;
+}
+
+#sidebar #cats li.h2, #sidebar #tags li.h2, #sidebar #latest-work li.h2  {
+	font:normal 20px/35px Georgia, "Times New Roman", Times, serif;
+}
+
+#sidebar #articles li.h3 {
+	float: left;
+	clear: both;
+	font:bold 15px/22px Georgia, "Times New Roman", Times, serif;
+	width: 100%;
+	color: #333;
+	margin: 0 0 5px 0;
+}
+
+#sidebar #articles li.h3 span {
+	font:normal 15px/22px Georgia, "Times New Roman", Times, serif;
+	color: #aaa;
+}
+
+
+#sidebar h3 {
+	float: left;
+	clear: both;
+	font:bold 15px/22px Georgia, "Times New Roman", Times, serif;
+	width: 100%;
+	text-align: left;
+	color: #333;
+	margin: 10px 0 0 0;
+}
+
+#sidebar p {
+	float: left;
+	clear: both;
+	font:italic normal  15px/22px italic Georgia, "Times New Roman", Times, serif;
+	width: 100%;
+	padding:0 0 10px 0;
+	margin: 0 0 10px 0;
+	border-bottom: 1px dotted #aaa;
+	color: #777;
+}
+
+
+/* __ Footer */
+
+
+#footer {
+	float: left;
+	clear: both;
+	color: #fff;
+	margin: 50px 0 0 20px;
+}
+
+#footer p {
+	background: #000;
+	padding: 2px 5px;
+	width: auto;
+	float: left;
+	display: inline;
+	clear: both;
+	margin: 0 0 1px 0;
+}
+
+#footer p.big {
+	font-size: 25px;
+	font-family:Arial, Helvetica, sans-serif;
+	padding: 4px 5px;
+}
+
+#footer p a {
+	color: #fff;
+	border-bottom: 2px solid #d40000;
+	font-weight: bold;
+}
+
+#footer p a:hover {
+	background: #d40000;
+	border-bottom:2px solid #d40000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

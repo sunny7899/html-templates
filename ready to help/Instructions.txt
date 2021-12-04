@@ -1,0 +1,41 @@
+
+If you Like my work, Hire me for you next project.
+Go to http://themegret.com to contact with me.
+
+
+1.---------------------MAILCHIMP---------------------------------------
+
+Go to js > custom.js
+
+Find MailCimp Plugin Script and replace your custom URL inside ''
+
+Example:  url: 'http://http://themegret.us9.list-manage1/bla-bla-bla'
+
+_______________________________________________________________________
+
+2.--------------------Contact Form------------------------------------
+
+Go to contact > contact.php replace YOUR_MAIL with your email address inside ''
+
+Example: if ( mail( 'myNameIsJack@gmail.com', $mail_subject, $message, "From:" . $email ) )
+
+
+
+
+--------------------------------Thats All--------------------------------------
+
+--------------------- Thanks And visit my site for more info http://themegret.com/ ----------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+

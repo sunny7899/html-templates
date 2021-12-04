@@ -1,0 +1,9 @@
+#carousel { width:458px; height:498px; margin:0 auto; overflow:hidden; position:relative; text-align:center; }
+#slides { overflow:hidden; /* fix ie overflow issue */ position:relative; width:458px; height:498px;	}
+/* remove the list styles, width : item width * total items */	
+#slides ul { position:relative; left:0; top:0; list-style:none; margin:0; padding:0; width:458px; }
+/* width of the item, in this case I put 250x250x gif */
+#slides li { width:458px; height:498px; float:left; display: block; position: absolute; }
+#slides li img { }
+
+

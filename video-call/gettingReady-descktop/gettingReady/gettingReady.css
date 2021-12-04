@@ -1,0 +1,163 @@
+body {
+    background-color: #ffffff;
+}
+
+.diplay-view {
+    height: 100vh;
+}
+
+.my-row {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 80% 10%;
+}
+
+.header-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meeting-info {
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: row;
+    place-content: space-around;
+}
+.meeting-info span {
+    color: #303030;
+}
+.meeting-info i {
+    font-size: 25px;
+    color: #303030;
+}
+
+.members {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.members .my-video {
+    position: relative;
+    height: 180px;
+    width: 125px;
+    background-color: #494949;
+    border: 1px solid #181818;
+    border-radius: 20px;
+}
+
+.members .my-video .fa {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #d4d4d4;
+    font-size: 20px;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 100%;
+    column-gap: 10px;
+    margin: 1rem 0;
+}
+
+.controls .controls-icon {
+    width: 50px;
+    height: 50px;
+    
+}
+
+.controls .controls-icon i {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 25px;
+    border: 1px solid #838383 ;
+    border-radius: 50px;
+}
+
+.controls button {
+    border-radius: 50px;
+    background-color: rgb(96, 96, 255);
+    outline: none;
+    color: #fff;
+    border: none;
+    padding: 0px 15px;
+}
+
+.footer {
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    place-content: space-around;
+}
+
+.footer span {
+    color: #838383
+}
+
+.footer p {
+    color: #313131;
+}
+
+.header {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .meeting-info {
+        place-content: start;
+    }
+
+    .meeting-info .header-icon {
+        display: none;
+    }
+
+    .members {
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .members .my-video {
+        position: relative;
+        height: 400px;
+        width: 700px;
+        background-color: #494949;
+        border: 1px solid #181818;
+        border-radius: 20px;
+    }
+
+    .members .my-video .fa {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        color: white;
+        font-size: 25px;
+    }
+    .controls {
+        justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: 100%;
+        column-gap: 10px;
+        margin: 0 2rem;
+    }
+}
