@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple form</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        background-color: #04aa6d;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      .heading {
+        background-color: #637a91;
+        text-align: center;
+        color: white;
+        margin: auto;
+        /* width: 50%; */
+        padding: 10px;
+      }
+
+      .btn {
+        background-color: #5fcf80;
+        text-align: center;
+        color: white;
+        margin: auto;
+        width: 100%;
+        padding: 10px;
+      }
+
+      .arrow {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+      }
+
+      .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="heading">
+        <p>Get started today!</p>
+      </div>
+      <form onsubmit="return(validateHTMlform())" name="trialForm">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstName"
+          placeholder="Your name.."
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastName"
+          placeholder="Your last name.."
+        />
+
+        <label for="lname">Email</label>
+        <input
+          type="text"
+          id="lname"
+          name="emailId"
+          placeholder="Your last name.."
+        />
+
+        <label for="lname">Password</label>
+        <input
+          type="text"
+          id="lname"
+          name="Password"
+          placeholder="Your last name.."
+        />
+
+        <input type="submit" value="Claim your free trial" class="btn" />
+      </form>
+
+      <p>
+        You are agreeing to our
+        <span
+          ><a href="#" style="text-decoration: none">Terms and Services</a>
+        </span>
+      </p>
+    </div>
+  </body>
+  <!-- <script src="./ind.js"></script> -->
+  <script>
+    function validateHTMlform() {
+      event.preventDefault();
+      let form = document.trialForm;
+      validateFirstName = form.firstName.value;
+      let isValidateFirstName = validateFirstName.match(/[^a-zA-Z]/g);
+      validateLastName = form.lastName.value;
+      let isValidateLastName = validateLastName.match(/[^a-zA-Z]/g);
+      validatePassword = form.Password.value;
+      let isValidatePassword = validatePassword.match(/^[0-9a-zA-Z]+$/);
+
+      if (validateFirstName == "") {
+        alert("Please provide First Name!");
+        form.firstName.focus();
+        return;
+      }
+
+      if (validateLastName == "") {
+        alert("Please provide last Name!");
+        form.lastName.focus();
+        return;
+      }
+
+      if (isValidateFirstName) {
+        alert("in first name numbers not allowed");
+        form.firstName.focus();
+        return;
+      }
+      if (isValidateLastName) {
+        alert("In last name numbers not allowed");
+        form.lastName.focus();
+        return;
+      }
+
+      var email = form.emailId.value;
+      // atpos = email.indexOf("@");
+      // dotpos = email.lastIndexOf(".");
+      const re =
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      let vhj = re.test(String(email).toLowerCase());
+      console.log(vhj, "vhjvhj");
+      if (email == "" || vhj == false) {
+        alert("Please enter correct email ID");
+        form.emailId.focus();
+        return;
+      }
+
+      if (validatePassword.length < 8) {
+        alert("password must be greater then 8");
+        form.Password.focus();
+        return;
+      }
+
+      if (isValidatePassword == null) {
+        alert("In password only text and number allowed");
+        form.Password.focus();
+        return;
+      }
+
+      alert("form submitted");
+
+    }
+  </script>
+</html>
