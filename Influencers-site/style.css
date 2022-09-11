@@ -1,0 +1,356 @@
+body {
+    color: #000;
+}
+.align-head {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 0 50%;
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+}
+
+/* .navbar {
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+} */
+.txt {
+  margin: 1rem 0 0 0;
+  text-align: right;
+  display: block;
+  width: 100%;
+  max-width: 15rem;
+  padding: .5rem 0;
+  border: 1px solid rgba(0,0,0,.12);
+  padding: 1.4rem 2rem !important;
+  line-height: 1.2rem !important;
+  font-family: minion-pro;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+}
+.nav-bar {
+    text-align: center;
+    flex: 0 0 100%;
+    margin: .1vw 0 0;
+}
+.align-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.align-list-item li {
+    margin-left: .65vw;
+    margin-right: .65vw;
+    white-space: nowrap;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+    line-height: 1.8em;
+    color: #000;
+}
+
+ .align-list-item-text li a  {
+    text-decoration: none;
+    backface-visibility: hidden;
+    padding: .1em 0;
+    display: block;
+    background: transparent;
+    cursor: pointer;
+    color: #000;
+}
+
+
+.active-list-item {
+    background-repeat: repeat-x;
+    background-image: linear-gradient(to right,currentColor 100%,currentColor 0);
+    background-size: 1px 1px;
+    background-position: 0 calc(100% - 0.1em);
+}
+.head-name {
+    font-family: Balthazar;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .25em;
+    text-transform: none;
+    line-height: 1.4em;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    /* color: white; */
+    /* padding: 14px 16px; */
+    background-color: inherit;
+    margin: 0;
+
+    margin-left: .65vw;
+    margin-right: .65vw;
+    white-space: nowrap;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+    line-height: 1.8em;
+    color: #000;
+  }
+  
+  /* .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  } */
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: #f9f9f9; */
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .main-content {
+    display: flex;
+    background-color: #F7F3E4;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6.6vmax;
+    padding-bottom: 6.6vmax;
+  }
+
+  .side-content {
+    width: 25%;
+    margin-left: 20px;
+  }
+  
+  .bottom {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 1;
+    letter-spacing: 0.5em;
+    margin-top: 50px;
+  }
+.btn-align {
+  text-align: right;
+}
+  .btn {
+    color: #fff;
+    background-color: #870d13;
+    border-color: #870d13;
+    border-radius: 300px;
+    padding: .5rem 0;
+    width: auto;
+    margin: 1rem 0 0 0;
+    display: inline-block;
+    height: auto;
+    border-width: 0;
+    text-align: center;
+    padding: 1.4rem 2rem !important;
+    line-height: 1.2rem !important;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    white-space: nowrap;
+  }
+
+  footer {
+    min-height: 14vh;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding-bottom: calc(14vmax / 5);
+  }
+
+  .bottom a {
+    color: #000;
+    text-decoration: none;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    /* text-align: left; */
+  }
+
+  .icon {
+    display: none !important;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  #film-making {
+    text-align: center;
+    padding: 55px;
+  }
+
+  .align-boxes {
+display: flex;
+  }
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    /* font-family: "Josefin Sans", sans-serif; */
+    font-family: Suravaram;
+  }
+  
+  .navbar {
+    font-size: 18px;
+    background-color: #333;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  
+  
+  .main-nav {
+    list-style-type: none;
+    display: none;
+  }
+  
+  .nav-links,
+  .logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .main-nav li {
+    text-align: center;
+    margin: 15px auto;
+  }
+  
+  .logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  .navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+  }
+  section {
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+
+    transition: width 2s;
+  }
+  .active {
+    display: block;
+  }
+
+  .active2 {
+    margin-top: 70%;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 0;
+      height: 50px;
+      align-items: center;
+    }
+  
+    .main-nav {
+      display: flex;
+      margin-right: 30px;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  
+    .main-nav li {
+      margin: 0;
+    }
+  
+    .nav-links {
+      margin-left: 40px;
+    }
+  
+    .logo {
+      margin-top: 0;
+    }
+  
+    .navbar-toggle {
+      display: none;
+    }
+  
+    .logo:hover,
+    .nav-links:hover {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+@media screen and (min-width: 321px) and (max-width: 480px) {
+
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+   .btn-align {
+    margin-right: 20px;
+  }
+  .align-boxes {
+    flex-direction: column;
+  }
+ 
+    .head-name {
+   
+        font-size: calc((2 - 1) * 1.2vw + 1rem);
+   
+    }
+
+  .main-content {
+    flex-direction: column;
+    
+  }
+
+  .side-content {
+    width: 100%;
+    margin-left: 40px;
+}
+.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+    }
