@@ -1,0 +1,57 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.fortune-cookie {
+    width: 200px;
+    height: 200px;
+    background-image: url('fc.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.fortune-cookie:hover {
+    transform: scale(1.1);
+}
+
+.message {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px dashed #333;
+    background-color: #fff8e1;
+    border-radius: 10px;
+    width: 50%;
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
