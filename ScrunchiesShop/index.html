@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrunchies.in</title>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="icon" href="pic.jpg">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- <script src="index.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+<!-- <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "RbL4B-WwRpQgkOf1o",
+      });
+   })();
+</script> -->
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">Scrunchie Kaws</div>
+        <span class="menu-button" onclick="openNav()">&#9776;</span>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <button type="button" class="btn">Buy Now</button>
+            </ul>
+        </div>
+    </nav>
+    <!-- responsive side navbar NT8EE49EJEJZRHRV1Q48Q1JB-->
+    <nav>
+        <div class="sideNav" id="sidenav" >
+            <a href="#" class="closebtn" onclick="closeNav()">&#10006;</a>
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#"><button type="button" class="btn">Buy Now</button></a>
+        </div>
+    </nav>
+    <!-- header content with image -->
+    <div class="row">
+        <div class="column1">
+            <h1>Welcome To Scrunchies</h1>
+            <p>Contact us for  business!</p>
+            <!-- <button class="btn">Purchase!</button> -->
+            <div class="container">
+                <h2>Join Our Newsletter</h2>
+                <p>Sign up to receive updates and special offers</p>
+                <form id="signup-form" onsubmit="sendMail(event)">
+                    <input type="text" id="name" placeholder="Enter name" required><br>
+                    <input type="email" id="email" placeholder="Enter Email" required><br>
+                    <button  class="btn" type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <div class="column2">
+            <div class="p">Our Products:</div>
+            <div class="images">
+            <img src="pic1.jpg" alt="web dev" height="200px" width="200px">
+            <img src="pic3.jpg" alt="web dev" height="200px" width="200px"></div>
+        </div>
+    </div>
+    <script>
+       function sendMail(event) {
+    event.preventDefault();
+    var params = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+    };
+
+    var data = {
+        service_id: 'service_x4xdhbi',
+        template_id: 'template_wemqboy',
+        user_id: 'RbL4B-WwRpQgkOf1o',
+        template_params: params
+    };
+
+    $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+        type: 'POST',
+        data: JSON.stringify(data),
+        contentType: 'application/json'
+    }).done(function() {
+        document.getElementById('name').value = ""; 
+        document.getElementById('email').value = ""; 
+        alert('Your mail is sent!');
+    }).fail(function(error) {
+        alert('Oops... ' + JSON.stringify(error));
+        console.log(error);
+    });
+}
+
+    </script>
+</body>
+</html>
