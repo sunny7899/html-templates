@@ -12,7 +12,7 @@ const Home = () => {
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(false);
   const [showType, setShowType] = useState('table');
-
+// const [user, setUser] = useState({} as User);
   useEffect(() => {
     setLoading(true);
     axios
